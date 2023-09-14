@@ -1,0 +1,63 @@
+body{
+    background-color: black !important;
+}
+
+::selection {
+    background: #c32865;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.poppinsRegular {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.poppinsBoldItalic {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppinsRegularItalic {
+    color: #FFE3FC;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.portada-categoria {
+    width: 100%;
+}
+
+.contenedor-card .card {
+    margin:10px;
+}
+
+.altura-img {
+    height: 190px;
+}
+
+.altura-img2 {
+    height: 185px;
+}
+
+.card-categoria {
+    background: linear-gradient(to bottom, #06A4ca, #700052) border-box;
+    transition: all .5s ease;
+}
+
+.card-categoria:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.pagination li a {
+    background: #700052 !important;
+    color: #fff;
+}
+
+.pagination li a:hover {
+    color:#06A4ca ;
+}

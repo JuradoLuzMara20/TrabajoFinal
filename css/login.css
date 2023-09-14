@@ -1,0 +1,48 @@
+:root {
+  --color-Navbar: linear-gradient(to right, #102023 0%, #1a0f17 100%);
+  --color-Border-Gradient: linear-gradient(to right, #06A4CA, #700052);
+  --color-morado: #2d0527;
+  --color-white: #ffe3fc;
+  --color-footer: #0f0f0f;
+  --color-gris: #2D2D2D;
+}
+
+.styleButton button {
+
+  background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
+    linear-gradient(to right, #06A4ca, #700052) border-box;
+  border-radius: 50em;
+  border: 2px solid transparent;
+  transition: all .5s ease;
+}
+
+.styleButton button:hover {
+  border-color: #06A4ca;
+}
+
+.form-input {
+  border: none;
+  border-bottom: 3px solid #06A4ca;
+  background-color: transparent;
+  Outline: none;
+}
+
+.form-control-login {
+  background-color: #191919;
+  color: white;
+  border: 0;
+  outline: none;
+}
+
+.input-group span {
+  background-color: #191919;
+  color: white;
+  border: 0;
+}
+
+.form-control:focus {
+  background-color: #191919;
+  outline: none;
+  overflow: hidden;
+  border: 0;
+}

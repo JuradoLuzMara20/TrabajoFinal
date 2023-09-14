@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Grupo 3">
+    <meta name="description" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/suscripcion.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../img/FaviconLFB-01.png" type="image/x-icon">
+    <title>LiveFest</title>
+
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg fondo-navbar sticky-top">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/LogoLiveFest.png" alt="Logo de LiveFest"  
+                        class="colorInvertido logo-navbar">
+                </a>
+
+                <button class="navbar-toggler colorInvertido" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse d-lg-flex justify-content-md-between"
+                    id="navbarSupportedContent">
+
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item mx-0 mx-xl-1">
+                            <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown mx-0 mx-xl-1">
+                            <a class="nav-link dropdown-toggle active text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Categorías
+                            </a>
+                            <ul class="dropdown-menu text-white fondo-navbar">
+                                <li><a class="dropdown-item text-white Cate" href="categoriapop.html">Pop</a>
+                                </li>
+                                <li><a class="dropdown-item text-white Cate"
+                                        href="categoriarock.html">Rock</a></li>
+                                <li><a class="dropdown-item text-white Cate"
+                                        href="error404.html">Electrónica</a></li>
+                                <li><a class="dropdown-item text-white Cate"
+                                        href="error404.html">Reggaeton</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item  mx-0 mx-xl-1">
+                            <a class="nav-link active text-white" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+
+                    <form action="error404.html" class="d-flex input-gruop borde m-2 form-buscar" role="search">
+                        <span class="input-group-text btn-lupa" id="inputGroupPrepend2">
+                            <img class="colorInvertido img-lupa" src="../img/search.png">
+                        </span>
+                        <input class="form-control buscador text-white" type="search" placeholder="Buscar"
+                            aria-label="Search" aria-describedby="inputGroupPrepend2">
+                    </form>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item borde m-2">
+                            <a class="nav-link btn-inicio text-white px-2 px-xl-4" aria-current="page" href="#"
+                                data-bs-toggle="modal" data-bs-target="#logInModal">Iniciar Sesión</a>
+                        </li>
+                        <li class="nav-item borde m-2">
+                            <a class="nav-link text-white btn-inicio btn-inicio-degradado px-2 px-xl-4" aria-current="page"
+                                href="suscripcion.html">Suscribirse</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+
+        <section class="ContainerSubscripciones">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-center my-4 text-white poppinsBoldItalic">ELEGÍ EL PLAN QUE MÁS TE GUSTE</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="card border border-dark border-2 mx-auto text-bg-secondary mb-3"
+                            style="width: 18rem; min-height: 23rem;">
+                            <div class="card-body">
+                                <h5 class="card-title text-center poppinsBoldItalic">PLAN ESTÁNDAR</h5>
+                                <h6 style="font-size: 1.4rem;" class="card-subtitle mb-2 text-muted text-center">$1.105,50 / mes</h6>
+                                <ul class="">
+                                    <li>Acceso a tres conciertos en vivo por mes.</li>
+                                    <li>Acceso ilimitado a conciertos grabados.</li>
+                                    <li>Puedes ver en un dispositivo a la vez.</li>
+                                    <li>Calidad Full HD.</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn btn-primary d-block mx-3 mb-2 btn-susc-fondo" data-bs-toggle="modal"
+                                data-bs-target="#suscribirse">SUSCRIBIRME</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card border border-dark border-2 mx-auto text-bg-secondary mb-3"
+                            style="width: 18rem; min-height: 23rem;">
+                            <div class="card-body">
+                                <h5 class="card-title text-center poppinsBoldItalic">PLAN BÁSICO</h5>
+                                <h6 style="font-size: 1.4rem;" class="card-subtitle mb-2 text-muted text-center">GRATIS</h6>
+                                <ul>
+                                    <li>Acceso limitado a conciertos grabados con publicidad.</li>
+                                    <li>Puedes ver en un dispositivo a la vez.</li>
+                                    <li>Calidad 720p.</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn btn-primary d-block mx-3 mb-2 btn-susc-fondo" data-bs-toggle="modal"
+                                data-bs-target="#suscribirse">SUSCRIBIRME</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card border border-dark border-2 mx-auto text-bg-secondary mb-3"
+                            style="width: 18rem; min-height: 23rem;">
+                            <div class="card-body">
+                                <h5 class="card-title text-center poppinsBoldItalic">PLAN PREMIUM</h5>
+                                <h6 style="font-size: 1.4rem;" class="card-subtitle mb-2 text-muted text-center">$2.200,50 / mes</h6>
+                                <ul>
+                                    <li>Acceso a todos los conciertos en vivo.</li>
+                                    <li>Acceso ilimitado a conciertos grabados.</li>
+                                    <li>Puedes ver en tres dispositivos a la vez.</li>
+                                    <li>Calidad Full HD.</li>
+                                    <li>Descarga los conciertos para verlos off-line.</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn btn-primary d-block mx-3 mb-2 btn-susc-fondo" data-bs-toggle="modal"
+                                data-bs-target="#suscribirse">SUSCRIBIRME</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p class="text-center my-4 fs-3 text-white poppinsRegular">¿YA ESTÁS SUSCRIPTO? <a
+                                href="error404.html">Iniciar
+                                sesión</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="suscribirse" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content bg-black">
+                        <div class="modal-header">
+                            <div class="ms-auto">
+                                <img style="filter: invert(100%)" width="200px" src="../img/LogoLiveFest.png"
+                                    alt="Logo Live Fest">
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <form action="./html/error404.html">
+                            <div class="modal-body">
+                                <div class="form-floating mb-3 form-input">
+                                    <label for="floatingInput validationDefaultUsername"
+                                        class="form-label">Nombre</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="inputGroupPrepend2">Nombre</span>
+                                        <input type="text" class="form-control form-control-login text-white"
+                                            id="validationDefaultUsername" minlength="3" maxlength="20"
+                                            aria-describedby="inputGroupPrepend2"
+                                            title="Este campo solo acepta letras y espacios en blanco"
+                                            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3 form-input">
+                                    <label for="floatingInput validationDefaultUsername"
+                                        class="form-label">Apellido</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="inputGroupPrepend2">Apellido</span>
+                                        <input type="text" class="form-control form-control-login text-white"
+                                            id="validationDefaultUsername" minlength="3" maxlength="20"
+                                            aria-describedby="inputGroupPrepend2"
+                                            title="Este campo solo acepta letras y espacios en blanco"
+                                            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3 form-input">
+                                    <label for="floatingInput validationDefaultUsername"
+                                        class="form-label">Email</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="inputGroupPrepend2">Email</span>
+                                        <input type="email" class="form-control form-control-login text-white"
+                                            id="validationDefaultUsername" minlength="3"
+                                            aria-describedby="inputGroupPrepend2" title="Formato de email invalido"
+                                            pattern="[a-zA-Z0-9!#$%&'_+-]([\.]?[a-zA-Z0-9!#$%&'_+-])+@[a-zA-Z0-9]([^@&%$\/()=?¿!.,:;]|\d)+[a-zA-Z0-9][\.][a-zA-Z]{2,4}([\.][a-zA-Z]{2})?"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3 form-input">
+                                    <label for="floatingInput validationDefaultUsername"
+                                        class="form-label">Usuario</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="inputGroupPrepend2">Usuario</span>
+                                        <input type="text" class="form-control form-control-login text-white"
+                                            id="validationDefaultUsername" minlength="5" maxlength="15"
+                                            aria-describedby="inputGroupPrepend2" title="Formato de usuario invalido"
+                                            pattern="^(?=[a-zA-Z0-9._]{8,20}$)(?!.*[_.]{2})[^_.].*[^_.]$" required>
+                                    </div>
+                                </div>
+                                <div class="form-floating form-input">
+                                    <label for="floatingPassword"></label>
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="inputGroupPrepend2">Contraseña</span>
+                                        <input type="password" class="form-control form-control-login text-white"
+                                            id="floatingPassword" minlength="8" maxlength="20" required>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer styleButton mt-4">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cerrar</button>
+                                    <a href="./html/error404.html"><button type="submit" class="btn btn-primary">Crear
+                                            Cuenta</button></a>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="border-top-footer"></div>
+    <footer class="container-fluid">
+        <div class="row p-5 justify-content-md-center">
+            <section class=" mt-4 redes col-sm-12 col-md-3 col-lg-2 col-xl-2">
+                <div class="p-1  container_enlaces_rrss">
+                    <a href="https://www.facebook.com/" target="_blank" class="enlaces_footer"><img
+                            class="iconos_footer p-1" src="../img/fb_icon.svg" alt="icono de Facebook" />
+                        <p class="d-inline p-1">/LiveFest</p>
+                    </a>
+                </div>
+                <div class="p-1  container_enlaces_rrss">
+                    <a href="https://www.instagram.com/" target="_blank" class="enlaces_footer"><img
+                            class="iconos_footer p-1" src="../img/ig_icon.svg" alt="icono de Instagram" />
+                        <p class="d-inline p-1">@LiveFest</p>
+                    </a>
+                </div>
+                <div class="p-1 container_enlaces_rrss">
+                    <a href="https://www.Twitter.com/" target="_blank" class="enlaces_footer"><img
+                            class="iconos_footer p-1" src="../img/tw_icon.svg" alt="icono de Twitter" />
+                        <p class="d-inline p-1">@LiveFest</p>
+                    </a>
+                </div>
+            </section>
+
+            <section class=" mt-5 col-sm-12 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-start  align-items-start">
+                <div>
+                    <a href="../index.html" class="enlaces_footer"><img class="logo_footer p-3" width="70%"
+                            src="../img/logo.png " alt="Logo de LiveFest" /></a>
+                </div>
+
+            </section>
+            <section class="mt-4 col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                <div class="p-1"><a href="../html/suscripcion.html" class="enlaces_footer">Planes</div>
+                <div class="p-1"><a href="../html/error404.html" class="enlaces_footer">Conciertos</a></div>
+                <div class="p-1"><a href="../html/error404.html" class="enlaces_footer"> Géneros</a></div>
+                <div class="p-1"><a href="../html/nosotros.html" class="enlaces_footer">Acerca de nosotros</a></div>
+            </section>
+            <section class="mt-4  col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                <div class="p-1"> <a href="../html/error404.html" class="enlaces_footer">Términos y Políticas</a></div>
+                <div class="p-1"><a href="../html/contacto.html" class="enlaces_footer">Contacto</a></div>
+                <div class="p-1"><a href="../html/error404.html" class="enlaces_footer">FAQ</a></div>
+            </section>
+        </div>
+    </footer>
+
+    <div class="modal fade my-5" id="logInModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-black">
+                <div class="modal-header">
+                    <div class="ms-auto">
+                        <img style="filter: invert(100%)" width="200px" src="../img/LogoLiveFest.png"
+                            alt="Logo Live Fest">
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="error404.html">
+                    <div class="modal-body">
+                        <div class="form-floating mb-3 form-input">
+                            <label for="floatingInput validationDefaultUsername" class="form-label">Usuario</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="inputGroupPrepend2">Usuario</span>
+                                <input type="text" class="form-control form-control-login text-white"
+                                    id="validationDefaultUsername" minlength="3" maxlength="20"
+                                    aria-describedby="inputGroupPrepend2"
+                                    title="Este campo solo acepta letras y espacios en blanco"
+                                    pattern="^(?=[a-zA-Z0-9._]{8,20}$)(?!.*[_.]{2})[^_.].*[^_.]$" required>
+                            </div>
+                        </div>
+                        <div class="form-floating form-input my-3">
+                            <label for="floatingPassword"></label>
+                            <div class="input-group ">
+                                <span class="input-group-text" id="inputGroupPrepend2">Contraseña</span>
+                                <input type="password" class="form-control form-control-login text-white "
+                                    id="floatingPassword" minlength="8" maxlength="20" required>
+                            </div>
+                        </div>
+                        <a href="../html/error404.html" class="text-white mb-5">¿Olvidaste tu contraseña?</a>
+                        <div class="modal-footer styleButton mt-2">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="submit" class="btn btn-primary">Ingresar</button>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

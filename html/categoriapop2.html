@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="autor" content="Grupo 3">
+  <meta name="description" content="">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/categoria.css">
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="../img/FaviconLFB-01.png" type="image/x-icon">
+  <title>LiveFest</title>
+
+</head>
+
+<body>
+  <header>
+
+    <nav class="navbar navbar-expand-lg fondo-navbar sticky-top">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="../index.html">
+          <img src="../img/LogoLiveFest.png" alt="Bootstrap" width="150" class="colorInvertido">
+        </a>
+
+        <button class="navbar-toggler colorInvertido" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse d-lg-flex justify-content-md-between" id="navbarSupportedContent">
+
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item mx-0 mx-xl-1">
+              <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown mx-0 mx-xl-1">
+              <a class="nav-link dropdown-toggle active text-white" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Categorías
+              </a>
+              <ul class="dropdown-menu text-white fondo-navbar">
+                <li><a class="dropdown-item text-white Cate" href="../html/categoriapop.html">Pop</a></li>
+                <li><a class="dropdown-item text-white Cate" href="../html/categoriarock.html">Rock</a></li>
+                <li><a class="dropdown-item text-white Cate" href="../html/error404.html">Electrónica</a></li>
+                <li><a class="dropdown-item text-white Cate" href="../html/error404.html">Reggaeton</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item mx-0 mx-xl-1">
+              <a class="nav-link active text-white" href="../html/contacto.html">Contacto</a>
+            </li>
+          </ul>
+
+
+          <form action="error404.html" class="d-flex input-gruop borde m-2 form-buscar" role="search">
+            <span class="input-group-text btn-lupa" id="inputGroupPrepend2">
+              <img width="19px" class="colorInvertido" src="../img/search.png">
+            </span>
+            <input class="form-control buscador text-white" type="search" placeholder="Buscar" aria-label="Search"
+              aria-describedby="inputGroupPrepend2">
+          </form>
+
+          <ul class="navbar-nav">
+            <li class="nav-item borde m-2">
+              <a class="nav-link btn-inicio text-white px-2 px-xl-4" aria-current="page" href="#" data-bs-toggle="modal"
+                data-bs-target="#logInModal">Iniciar Sesión</a>
+            </li>
+            <li class="nav-item borde borde-white m-2">
+              <a class="nav-link text-white btn-inicio btn-inicio-degradado px-2 px-xl-4" aria-current="page"
+                href="suscripcion.html">Suscribirse</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <h1 class="text-white text-center m-4 poppinsBoldItalic">CATEGORÍA POP</h1>
+  <div class="portada-categoria d-flex flex-wrap justify-content-center">
+    <iframe src="https://player.vimeo.com/video/88244048?h=08bfd1f45b" width="640" height="338" frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <section id="pag-dos" class="contenedor-card d-flex flex-wrap justify-content-center mt-5 mb-5 poppinsRegular">
+    <div class="card card-categoria" style="width: 18rem;">
+      <a href="error404.html"><img src="../img/coldplay.png" class="card-img-top altura-img2"
+          alt="Concierto de Coldplay"></a>
+      <div class="card-body">
+        <p class="card-text text-white">Coldplay</p>
+      </div>
+    </div>
+    <div class="card card-categoria" style="width: 18rem;">
+      <a href="error404.html"><img src="../img/dojacat.jpeg" class="card-img-top altura-img2"
+          alt="Concierto de Doja Cat"></a>
+      <div class="card-body">
+        <p class="card-text text-white">Doja Cat</p>
+      </div>
+    </div>
+    <div class="card card-categoria" style="width: 18rem;">
+      <a href="error404.html"><img src="../img/dualipa.jpg" class="card-img-top altura-img2"
+          alt="Concierto de Dua lipa"></a>
+      <div class="card-body">
+        <p class="card-text text-white">Dua Lipa</p>
+      </div>
+    </div>
+    <div class="card card-categoria" style="width: 18rem;">
+      <a href="error404.html"><img src="../img/harrystyles.jpg  " class="card-img-top altura-img2"
+          alt="Concierto de Harry Styles"></a>
+      <div class="card-body">
+        <p class="card-text text-white">Harry Styles</p>
+      </div>
+    </div>
+    <div class="card card-categoria" style="width: 18rem;">
+      <a href="error404.html"><img src="../img/justinbieber.jpg" class="card-img-top altura-img2"
+          alt="Concierto de Justin Bieber"></a>
+      <div class="card-body">
+        <p class="card-text text-white">Justin Bieber</p>
+      </div>
+    </div>
+    <div class="card card-categoria" style="width: 18rem;">
+      <a href="error404.html"><img src="../img/taylorswift.jpeg" class="card-img-top altura-img2"
+          alt="Concierto de Taylor Swift"></a>
+      <div class="card-body">
+        <p class="card-text text-white">Taylor Swift</p>
+      </div>
+    </div>
+    <div class="card card-categoria" style="width: 18rem;">
+      <a href="error404.html"><img src="../img/top.jpeg" class="card-img-top altura-img2"
+          alt="Concierto de Twenty One Pilots"></a>
+      <div class="card-body">
+        <p class="card-text text-white">Twenty One Pilots</p>
+      </div>
+    </div>
+    <div class="card card-categoria" style="width: 18rem;">
+      <a href="error404.html"><img src="../img/mariabecerra.jpg" class="card-img-top altura-img2"
+          alt="Concierto de María Becerra"></a>
+      <div class="card-body">
+        <p class="card-text text-white">María Becerra</p>
+      </div>
+    </div>
+
+  </section>
+
+  <nav aria-label="Page navigation example ">
+    <ul class="pagination d-flex flex-wrap justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="categoriapop.html#pag-uno" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="categoriapop.html#pag-uno">1</a></li>
+      <li class="page-item disabled"><a class="page-link" href="#">2</a></li>
+      <li class="page-item disabled">
+        <a class="page-link" href="" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="border-top-footer"></div>
+  <footer class="container-fluid">
+    <div class="row p-5 justify-content-md-center">
+      <section class=" mt-4 redes col-sm-12 col-md-3 col-lg-2 col-xl-2">
+        <div class="p-1  container_enlaces_rrss">
+          <a href="https://www.facebook.com/" target="_blank" class="enlaces_footer"><img class="iconos_footer p-1"
+              src="../img/fb_icon.svg" alt="icono de Facebook" />
+            <p class="d-inline p-1">/LiveFest</p>
+          </a>
+        </div>
+        <div class="p-1  container_enlaces_rrss">
+          <a href="https://www.instagram.com/" target="_blank" class="enlaces_footer"><img class="iconos_footer p-1"
+              src="../img/ig_icon.svg" alt="icono de Instagram" />
+            <p class="d-inline p-1">@LiveFest</p>
+          </a>
+        </div>
+        <div class="p-1 container_enlaces_rrss">
+          <a href="https://www.Twitter.com/" target="_blank" class="enlaces_footer"><img class="iconos_footer p-1"
+              src="../img/tw_icon.svg" alt="icono de Twitter" />
+            <p class="d-inline p-1">@LiveFest</p>
+          </a>
+        </div>
+      </section>
+
+      <section class=" mt-5 col-sm-12 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-start  align-items-start">
+        <div>
+          <a href="../index.html" class="enlaces_footer"><img class="logo_footer p-3" width="70%" src="../img/logo.png "
+              alt="Logo de LiveFest" /></a>
+        </div>
+
+      </section>
+      <section class="mt-4 col-sm-12 col-md-4 col-lg-3 col-xl-3">
+        <div class="p-1"><a href="../html/suscripcion.html" class="enlaces_footer">Planes</div>
+        <div class="p-1"><a href="../html/error404.html" class="enlaces_footer">Conciertos</a></div>
+        <div class="p-1"><a href="../html/error404.html" class="enlaces_footer"> Géneros</a></div>
+        <div class="p-1"><a href="../html/nosotros.html" class="enlaces_footer">Acerca de nosotros</a></div>
+      </section>
+      <section class="mt-4  col-sm-12 col-md-4 col-lg-3 col-xl-3">
+        <div class="p-1"> <a href="../html/error404.html" class="enlaces_footer">Términos y Políticas</a></div>
+        <div class="p-1"><a href="../html/contacto.html" class="enlaces_footer">Contacto</a></div>
+        <div class="p-1"><a href="../html/error404.html" class="enlaces_footer">FAQ</a></div>
+      </section>
+    </div>
+  </footer>
+
+  <div class="modal fade my-5" id="logInModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-black">
+        <div class="modal-header">
+          <div class="ms-auto">
+            <img style="filter: invert(100%)" width="200px" src="../img/LogoLiveFest.png" alt="Logo Live Fest">
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form action="error404.html">
+          <div class="modal-body">
+            <div class="form-floating mb-3 form-input">
+              <label for="floatingInput validationDefaultUsername" class="form-label">Usuario</label>
+              <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend2">Usuario</span>
+                <input type="text" class="form-control form-control-login text-white" id="validationDefaultUsername"
+                  minlength="5" maxlength="15" aria-describedby="inputGroupPrepend2" title="Formato de usuario invalido"
+                  pattern="^(?=[a-zA-Z0-9._]{8,20}$)(?!.*[_.]{2})[^_.].*[^_.]$" required>
+              </div>
+            </div>
+            <div class="form-floating form-input my-3">
+              <label for="floatingPassword"></label>
+              <div class="input-group ">
+                <span class="input-group-text" id="inputGroupPrepend2">Contraseña</span>
+                <input type="password" class="form-control form-control-login text-white " id="floatingPassword"
+                  minlength="8" maxlength="20" required>
+              </div>
+            </div>
+            <a href="../html/error404.html" class="text-white mb-5">¿Olvidaste tu contraseña?</a>
+            <div class="modal-footer styleButton mt-2">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="submit" class="btn btn-primary">Ingresar</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

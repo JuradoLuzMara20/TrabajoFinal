@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Grupo 3">
+    <meta name="description" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../img/FaviconLFB-01.png" type="image/x-icon">
+    <title>LiveFest</title>
+
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg fondo-navbar sticky-top">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/LogoLiveFest.png" alt="Logo de LiveFest"  
+                        class="colorInvertido logo-navbar">
+                </a>
+
+                <button class="navbar-toggler colorInvertido" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse d-lg-flex justify-content-md-between"
+                    id="navbarSupportedContent">
+
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item mx-0 mx-xl-1">
+                            <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown mx-0 mx-xl-1">
+                            <a class="nav-link dropdown-toggle active text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Categorías
+                            </a>
+                            <ul class="dropdown-menu text-white fondo-navbar">
+                                <li><a class="dropdown-item text-white Cate" href="categoriapop.html">Pop</a>
+                                </li>
+                                <li><a class="dropdown-item text-white Cate"
+                                        href="categoriarock.html">Rock</a></li>
+                                <li><a class="dropdown-item text-white Cate"
+                                        href="error404.html">Electrónica</a></li>
+                                <li><a class="dropdown-item text-white Cate"
+                                        href="error404.html">Reggaeton</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item  mx-0 mx-xl-1">
+                            <a class="nav-link active text-white" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+
+                    <form action="error404.html" class="d-flex input-gruop borde m-2 form-buscar" role="search">
+                        <span class="input-group-text btn-lupa" id="inputGroupPrepend2">
+                            <img class="colorInvertido img-lupa" src="../img/search.png">
+                        </span>
+                        <input class="form-control buscador text-white" type="search" placeholder="Buscar"
+                            aria-label="Search" aria-describedby="inputGroupPrepend2">
+                    </form>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item borde m-2">
+                            <a class="nav-link btn-inicio text-white px-2 px-xl-4" aria-current="page" href="#"
+                                data-bs-toggle="modal" data-bs-target="#logInModal">Iniciar Sesión</a>
+                        </li>
+                        <li class="nav-item borde m-2">
+                            <a class="nav-link text-white btn-inicio btn-inicio-degradado px-2 px-xl-4" aria-current="page"
+                                href="suscripcion.html">Suscribirse</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container contacto">
+        <div class="row">
+            <div class="col-md-12 text-center text-white">
+                <h2 class="my-4 poppinsBoldItalic">CONTÁCTANOS</h2>
+            </div>
+            <div class="col-md-6 d-none d-md-block">
+                <img src="../img/fiestahumo3.gif" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <form action="./error404.html" class="me-3 ">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="input-group m-2 mb-3">
+                                    <span class="input-contacto input-group-text" id="basic-addon1">Nombre</span>
+                                    <input type="text" pattern="^[A-Za-záéíóúñÁÉÍÓÚÑ\s]+$" class="form-control"
+                                        aria-label="Username" aria-describedby="basic-addon1" required>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="input-group m-2 mb-3">
+                                    <span class="input-contacto input-group-text" id="basic-addon1">Apellido</span>
+                                    <input type="text" pattern="^[A-Za-záéíóúñÁÉÍÓÚÑ\s]+$" class="form-control"
+                                        aria-label="Username" aria-describedby="basic-addon1" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="input-group m-2 mb-3">
+                                    <span class="input-contacto input-group-text" id="basic-addon1">E-mail</span>
+                                    <input type="email"
+                                        pattern="[a-zA-Z0-9!#$%&'_+-]([\.]?[a-zA-Z0-9!#$%&'_+-])+@[a-zA-Z0-9]([^@&%$\/()=?¿!.,:;]|\d)+[a-zA-Z0-9][\.][a-zA-Z]{2,4}([\.][a-zA-Z]{2})?"
+                                        class="form-control" aria-label="Username" aria-describedby="basic-addon1"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="input-group m-2 mb-3">
+                                    <span class="input-contacto input-group-text" id="basic-addon1">Celular</span>
+                                    <input type="cel" pattern="^[0-9+]{1,13}$" class="form-control"
+                                        aria-label="Username" aria-describedby="basic-addon1" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class=" input-group m-2 mb-3">
+                                    <span class=" input-group-text input-contacto" id="basic-addon1">Asunto</span>
+                                    <input type="text" pattern="^[A-Za-záéíóúñÁÉÍÓÚÑ\s]+$" class="form-control"
+                                        aria-label="Username" aria-describedby="basic-addon1" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="input-group m-2">
+                                    <span class="input-contacto input-group-text">Mensaje</span>
+                                    <textarea class="form-control" aria-label="With textarea" cols="10" rows="3"
+                                        required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <button type="submit" class="text-white">Enviar</button>
+                        </div>
+                </form>
+            </div>
+        </div>
+        <h2 class="text-center text-white mt-4 poppinsBoldItalic">ENCONTRANOS AQUÍ</h2>
+        <div class="d-flex justify-content-center mt-4">
+            <iframe class="mb-5"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.102370780057!2d-65.20939584883989!3d-26.83669609642022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1677956900079!5m2!1ses-419!2sar"
+                width="800" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    </div>
+    <div class="border-top-footer"></div>
+    <footer class="container-fluid">
+        <div class="row p-5 justify-content-md-center">
+            <section class=" mt-4 redes col-sm-12 col-md-3 col-lg-2 col-xl-2">
+                <div class="p-1  container_enlaces_rrss">
+                    <a href="https://www.facebook.com/" target="_blank" class="enlaces_footer"><img
+                            class="iconos_footer p-1" src="../img/fb_icon.svg" alt="icono de Facebook" />
+                        <p class="d-inline p-1">/LiveFest</p>
+                    </a>
+                </div>
+                <div class="p-1  container_enlaces_rrss">
+                    <a href="https://www.instagram.com/" target="_blank" class="enlaces_footer"><img
+                            class="iconos_footer p-1" src="../img/ig_icon.svg" alt="icono de Instagram" />
+                        <p class="d-inline p-1">@LiveFest</p>
+                    </a>
+                </div>
+                <div class="p-1 container_enlaces_rrss">
+                    <a href="https://www.Twitter.com/" target="_blank" class="enlaces_footer"><img
+                            class="iconos_footer p-1" src="../img/tw_icon.svg" alt="icono de Twitter" />
+                        <p class="d-inline p-1">@LiveFest</p>
+                    </a>
+                </div>
+            </section>
+
+            <section class=" mt-5 col-sm-12 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-start  align-items-start">
+                <div>
+                    <a href="../index.html" class="enlaces_footer"><img class="logo_footer p-3" width="70%"
+                            src="../img/logo.png " alt="Logo de LiveFest" /></a>
+                </div>
+
+            </section>
+            <section class="mt-4 col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                <div class="p-1"><a href="../html/suscripcion.html" class="enlaces_footer">Planes</div>
+                <div class="p-1"><a href="../html/error404.html" class="enlaces_footer">Conciertos</a></div>
+                <div class="p-1"><a href="../html/error404.html" class="enlaces_footer"> Géneros</a></div>
+                <div class="p-1"><a href="../html/nosotros.html" class="enlaces_footer">Acerca de nosotros</a></div>
+            </section>
+            <section class="mt-4  col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                <div class="p-1"> <a href="../html/error404.html" class="enlaces_footer">Términos y Políticas</a></div>
+                <div class="p-1"><a href="../html/contacto.html" class="enlaces_footer">Contacto</a></div>
+                <div class="p-1"><a href="../html/error404.html" class="enlaces_footer">FAQ</a></div>
+            </section>
+        </div>
+    </footer>
+
+    <div class="modal fade my-5" id="logInModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-black">
+                <div class="modal-header">
+                    <div class="ms-auto">
+                        <img style="filter: invert(100%)" width="200px" src="../img/LogoLiveFest.png"
+                            alt="Logo Live Fest">
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="./html/error404.html">
+                    <div class="modal-body">
+                        <div class="form-floating mb-3 form-input">
+                            <label for="floatingInput validationDefaultUsername" class="form-label">Usuario</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="inputGroupPrepend2">Usuario</span>
+                                <input type="text" class="form-control form-control-login text-white"
+                                    id="validationDefaultUsername" minlength="5" maxlength="15"
+                                    aria-describedby="inputGroupPrepend2" title="Formato de usuario invalido"
+                                    pattern="^(?=[a-zA-Z0-9._]{8,20}$)(?!.*[_.]{2})[^_.].*[^_.]$" required>
+                            </div>
+                        </div>
+                        <div class="form-floating form-input my-3">
+                            <label for="floatingPassword"></label>
+                            <div class="input-group ">
+                                <span class="input-group-text" id="inputGroupPrepend2">Contraseña</span>
+                                <input type="password" class="form-control form-control-login text-white "
+                                    id="floatingPassword" minlength="8" maxlength="20" required>
+                            </div>
+                        </div>
+                        <a href="../html/error404.html" class="text-white mb-5">¿Olvidaste tu contraseña?</a>
+                        <div class="modal-footer styleButton mt-2">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <a href="../html/error404.html"><button type="submit"
+                                    class="btn btn-primary">Ingresar</button></a>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

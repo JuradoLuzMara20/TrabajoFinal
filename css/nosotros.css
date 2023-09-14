@@ -1,0 +1,48 @@
+:root{
+    --color-Navbar: linear-gradient(to right, #102023 0%, #1a0f17 100%);
+    --color-Border-Gradient:  linear-gradient(to right, #06A4CA, #700052); 
+    --color-morado: #2d0527;
+    --color-white: #ffe3fc;
+    --color-footer: #0f0f0f;  
+    --color-gris: #2D2D2D;  
+}
+
+::selection {
+    background: #c32865;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.fondo {
+    background-color: #111;
+}
+
+@media all and (max-width:767px)
+{
+    .img-nosotros
+    {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+    }
+}
+
+@media all and (min-width:992px)
+{
+.img-nosotros
+    {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px)
+{
+    .img-nosotros
+    {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+}

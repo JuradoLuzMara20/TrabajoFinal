@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Grupo 3">
+    <meta name="description" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/principal.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../img/FaviconLFB-01.png" type="image/x-icon">
+    <title>LiveFest</title>
+
+</head>
+
+<body>
+    
+    <header>
+
+        <nav class="navbar navbar-expand-lg fondo-navbar sticky-top">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./img/LogoLiveFest.png" alt="Logo de LiveFest"  
+                        class="colorInvertido logo-navbar">
+                </a>
+
+                <button class="navbar-toggler colorInvertido" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse d-lg-flex justify-content-md-between"
+                    id="navbarSupportedContent">
+
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item mx-0 mx-xl-1">
+                            <a class="nav-link active text-white" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown mx-0 mx-xl-1">
+                            <a class="nav-link dropdown-toggle active text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Categorías
+                            </a>
+                            <ul class="dropdown-menu text-white fondo-navbar">
+                                <li><a class="dropdown-item text-white Cate" href="./html/categoriapop.html">Pop</a>
+                                </li>
+                                <li><a class="dropdown-item text-white Cate"
+                                        href="./html/categoriarock.html">Rock</a></li>
+                                <li><a class="dropdown-item text-white Cate"
+                                        href="./html/error404.html">Electrónica</a></li>
+                                <li><a class="dropdown-item text-white Cate"
+                                        href="./html/error404.html">Reggaeton</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item  mx-0 mx-xl-1">
+                            <a class="nav-link active text-white" href="./html/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex input-gruop borde m-2 form-buscar" role="search">
+                        <span class="input-group-text btn-lupa" id="inputGroupPrepend2">
+                            <img class="colorInvertido img-lupa" src="img/search.png">
+                        </span>
+                        <input class="form-control buscador text-white" type="search" placeholder="Buscar"
+                            aria-label="Search" aria-describedby="inputGroupPrepend2">
+                    </form>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item borde m-2">
+                            <a class="nav-link btn-inicio text-white px-2 px-xl-4" aria-current="page" href="#"
+                                data-bs-toggle="modal" data-bs-target="#logInModal">Iniciar Sesión</a>
+                        </li>
+                        <li class="nav-item borde m-2">
+                            <a class="nav-link text-white btn-inicio btn-inicio-degradado px-2 px-xl-4" aria-current="page"
+                                href="./html/suscripcion.html">Suscribirse</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="liveFestCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#liveFestCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#liveFestCarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#liveFestCarousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#liveFestCarousel" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active c-item">
+                    <img src="../img/img1.jpg" class="d-block w-100 c-img" alt="Concierto de Bud Bunny">
+                    <div class="carousel-caption top-0 carouselMarginTop ">
+                        <h1 class="text-uppercase bg-black fontCarousel">LiveFest</h1>
+                        <p class="mt-5 fs-4 text-uppercase bg-black poppinsRegularItalic">"Conciertos en todo el mundo a
+                            un click de distancia"</p>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="../img/img2.jpg" class="d-block w-100 c-img" alt="Previa al concierto de Tini Stoessel">
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="../img/img3.jpg" class="d-block w-100 c-img"
+                        alt="Banda de rock en blanco y negro tocando la guitarra">
+                    <div class="carousel-caption top-0 carouselMarginTop ">
+                        <h2 class="text-uppercase bg-black fontCarousel">ROCK</h2>
+                        <p class="mt-5 fs-4 text-uppercase bg-black poppinsRegularItalic">"Conciertos exclusivos en tus
+                            manos"</p>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="../img/img4.jpg" class="d-block w-100 c-img" alt="Concierto de Tiesto">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#liveFestCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#liveFestCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="marginAll">
+
+            <div class="container-fluid text-center text-white propCards poppinsRegular" style="font-size: 1.4rem;">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-lg-6 col-xl mb-4 mt-4 position-relative zoomC">
+                        <a href="./html/categoriapop.html">
+                            <img src="../img/TinitiniMiniCards-01.jpg" style="border-radius: 3rem;" width="100%"
+                                alt="Foto artística de Tini">
+                            <div class="text-center position-absolute top-50 start-50 translate-middle">
+                                <p class="text-decoration-none text-white">Pop</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-12  col-lg-6 col-xl mb-4 mt-4 position-relative zoomC">
+                        <a href="./html/error404.html">
+                            <img src="../img/BadB-01.jpg" width="100%" style="border-radius: 3rem;"
+                                alt=" Foto de Bad Bunny">
+                            <div class="text-center position-absolute top-50 start-50 translate-middle">
+                                <p class="text-decoration-none text-white">Reggaeton</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-12 col-lg-6 col-xl mb-4 mt-4 position-relative zoomC">
+                        <a href="./html/error404.html">
+                            <img src="../img/SteveA-01.jpg" width="100%" style="border-radius: 3rem;"
+                                alt="Foto de Steve Aoki">
+                            <div class="text-center position-absolute top-50 start-50 translate-middle">
+                                <p class="text-decoration-none text-white">Electrónica</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-12 col-lg-6 col-xl mb-4 mt-4 position-relative zoomC">
+                        <a href="./html/categoriarock.html">
+                            <img src="../img/ChrisM-01.jpg" width="100%" style="border-radius: 3rem;"
+                                alt="Foto de Chris Martin">
+                            <div class="text-center position-absolute top-50 start-50 translate-middle">
+                                <p class="text-decoration-none text-white">Rock</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid mt-3">
+                <h2 class="d-flex poppinsBoldItalic text-white justify-content-center text-center">Tendencia en LiveFest
+                </h2>
+                <div class="d-flex justify-content-around flex-wrap text-center poppinsRegularItalic">
+                    <div class=" m-3 cardsDim bordeCelMor">
+                        <a href="./html/error404.html" class=" text-decoration-none">
+                            <img class="imagen zoomC2" src="../img/LogoTomorrow.svg" alt="Logo de Tomorrowland">
+                            <h4 class="text-decoration-none text-white">Tomorrowland</h4>
+                        </a>
+                    </div>
+
+                    <div class=" m-3 cardsDim bordeCelMor">
+                        <a href="./html/error404.html" class=" text-decoration-none">
+                            <img class="imagen zoomC2" src="../img/LogoLolla.svg" alt="Logo de Lollapalooza">
+                            <h4 class="text-decoration-none text-white">Lollapalooza</h4>
+                        </a>
+                    </div>
+                    <div class=" m-3 cardsDim bordeCelMor">
+                        <a href="./html/error404.html" class=" text-decoration-none">
+                            <img class="imagen zoomC2" src="../img/LogoCream.svg" alt="Logo de Creamfield">
+                            <h4 class="text-decoration-none text-white">Creamfield</h4>
+                        </a>
+                    </div>
+                    <div class=" m-3 cardsDim bordeCelMor">
+                        <a href="./html/error404.html" class=" text-decoration-none">
+                            <img class="imagen zoomC2" src="../img/LogoUltra.svg" alt="Logo del Ultra">
+                            <h4 class="text-decoration-none text-white">Ultra</h4>
+                        </a>
+                    </div>
+                    <div class=" m-3 cardsDim bordeCelMor">
+                        <a href="./html/error404.html" class=" text-decoration-none">
+                            <img class="imagen zoomC2" src="../img/Coachella.svg" alt="Logo de Coachella">
+                            <h4 class="text-decoration-none text-white">Coachella</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid mt-3">
+                <h2 class="d-flex poppinsBoldItalic text-white text-center justify-content-center">Próximos recitales
+                </h2>
+                <div class="d-flex justify-content-around flex-wrap">
+                    <div class="banners m-3 hiddenHover">
+                        <img src="../img/BannerTini-01.jpg" alt="Foto tini">
+                        <button><a href="./html/error404.html" class="text-white text-decoration-none">ACTIVAR
+                                RECORDATORIO</a></button>
+                    </div>
+
+                    <div class="banners m-3 hiddenHover">
+                        <img src="../img/BannerFred-01.jpg" alt="Concierto de Fred Again">
+                        <button><a href="./html/error404.html" class="text-white text-decoration-none">ACTIVAR
+                                RECORDATORIO</a></button>
+                    </div>
+                    <div class="banners m-3 hiddenHover">
+                        <img src="../img/BannerBudBunny-01.jpg" alt="Foto de Bad Bunny">
+                        <button><a href="./html/error404.html" class="text-white text-decoration-none">ACTIVAR
+                                RECORDATORIO</a></button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <section class="banner-promocion d-flex justify-content-center justify-content-lg-end align-items-center">
+            <section class="info-promocion d-flex  flex-column justify-content-center align-items-center">
+                <p class="text-center">No te pierdas ni un solo recital. Únete a nuestra comunidad de suscriptores y
+                    disfruta de acceso ilimitado a los mejores artistas del mundo.</p>
+                <div class="prueba"><button type="button" class="btn text-center btn-class"><a
+                            class="text-white text-decoration-none " href="./html/suscripcion.html">VER
+                            PLANES</a></button></div>
+            </section>
+        </section>
+
+        <section class="mt-5">
+            <h3 class="text-center text-white poppinsBoldItalic">Recomendado para ti</h3>
+            <section class="recomendado d-flex justify-content-around flex-wrap mt-4 poppinsRegular">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/concierto-coldplay.png" class="card-img-top" alt="concierto de Coldplay"
+                        data-bs-target="#Modal-01" data-bs-toggle="modal">
+                    <div class="card-body">
+                        <p class="card-text">Coldplay - River Plate, Buenos Aires Argentina 2022 </p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/concierto-daddy.png" class="card-img-top" alt="concierto de Daddy Yankee"
+                        data-bs-target="#Modal-02" data-bs-toggle="modal">
+                    <div class="card-body">
+                        <p class="card-text">Daddy Yankee - 2K20 Live, Puerto Rico 2020 </p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/concierto-miley.png" class="card-img-top" alt="concierto de Miley Cyrus"
+                        data-bs-target="#Modal-03" data-bs-toggle="modal">
+                    <div class="card-body">
+                        <p class="card-text">Miley Cyrus - Lollapalooza Brasil 2022</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/concierto-tini.png" class="card-img-top" alt="concierto de Tini Stoessel"
+                        data-bs-target="#Modal-04" data-bs-toggle="modal">
+                    <div class="card-body">
+                        <p class="card-text">TINI Tour 2022 - Santiago, Chile en Movistar Arena</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="modal-recomendado ">
+
+            <div class="modal fade" id="Modal-01" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title fs-5 text-white" id="ModalLabel">Coldplay - River Plate,
+                                Buenos Aires Argentina 2022</h2>
+                            <button type="button" class="btn-close text-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <video controls width="100%">
+                                <source src="video/Coldplay-video.mp4" type="video/mp4">
+                            </video>
+                            <h4 class="text-white">Lista de canciones</h4>
+                            <section class="d-flex flex-column">
+                                <div class="cancion">
+                                    <figure> <img src="img/Coldplay-HP-cover.png" alt="portada de album de Coldplay">
+                                    </figure>
+                                    <div class="info-cancion">
+                                        <h6>HIGHER POWER</h6>
+                                        <p>00:01:06</p>
+                                    </div>
+                                </div>
+                                <div class="cancion">
+                                    <figure> <img src="img/Coldplay_-_Paradise.jpeg" alt="portada de album Paradise">
+                                    </figure>
+                                    <div class="info-cancion">
+                                        <h6>PARADISE</h6>
+                                        <p>00:14:02</p>
+                                    </div>
+                                </div>
+                                <div class="cancion">
+                                    <figure> <img src="img/Coldplay_-_The_Scientist.png"
+                                            alt="portada album THE SCIENTIST"></figure>
+                                    <div class="info-cancion">
+                                        <h6>THE SCIENTIST</h6>
+                                        <p>00:19:27</p>
+                                    </div>
+                                </div>
+                                <div class="cancion">
+                                    <figure> <img src="img/Yellow_cover_art.jpeg" alt="portada album Yellow"></figure>
+                                    <div class="info-cancion">
+                                        <h6>YELLOW</h6>
+                                        <p>00:48:44</p>
+                                    </div>
+                                </div>
+                                <div class="cancion">
+                                    <figure> <img src="img/sky-coldplay-png.webp" alt="portada album de Coldplay">
+                                    </figure>
+                                    <div class="info-cancion">
+
+                                        <h6>A SKY FULL OF STARS</h6>
+                                        <p>01:17:12</p>
+                                    </div>
+                                </div>
+                                <div class="cancion">
+                                    <figure> <img src="img/Coldplay_-_Fix_You.jpg" alt="portada de album Fix You">
+                                    </figure>
+                                    <div class="info-cancion">
+
+                                        <h6>FIX YOU</h6>
+                                        <p>01:49:45</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-class text-white"
+                                data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-class"> <a class="text-white text-decoration-none"
+                                    href="https://www.youtube.com/watch?v=81V39pmRbmY" target="_blank">Reproducir
+                                    concierto completo</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="Modal-02" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title fs-5 text-white" id="ModalLabel">Daddy Yankee - 2K20 Live,
+                                Puerto Rico 2020</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <video controls width="100%">
+                                <source src="video/daddy-video.mp4" type="video/mp4">
+                            </video>
+                            <h4 class="text-white">Lista de canciones</h4>
+                            <section class="d-flex flex-column">
+                                <div class="cancion">
+                                    <figure> <img src="img/daddy-quetirepalante.jpeg"
+                                            alt="portada albun que tire pa lante"></figure>
+                                    <div class="info-cancion">
+                                        <h6>QUE TIRE PA LANTE</h6>
+                                        <p>00:3:11</p>
+                                    </div>
+                                </div>
+                                <div class="cancion">
+                                    <figure> <img src="img/Rompe.jpg" alt="portada de canción Rompe"></figure>
+                                    <div class="info-cancion">
+                                        <h6>ROMPE</h6>
+                                        <p>00:6:56</p>
+                                    </div>
+                                </div>
+                                <div class="cancion">
+                                    <figure> <img src="img/machucando.jpeg" alt=" portada de canción Machucando">
+                                    </figure>
+                                    <div class="info-cancion">
+                                        <h6>MACHUCANDO</h6>
+                                        <p>00:10:24</p>
+                                    </div>
+                                </div>
+                                <div class="cancion">
+                                    <figure> <img src="img/loquepaso.jpg" alt="portada de canción Lo que paso"></figure>
+                                    <div class="info-cancion">
+                                        <h6>LO QUE PASÓ PASÓ</h6>
+                                        <p>00:15:17</p>
+                                    </div>
+                                </div>
+                                <div class="cancion">
+                                    <figure> <img src="img/batidora.jpg" alt="portada de canción Batidora"></figure>
+                                    <div class="info-cancion">
+
+                                        <h6>BATIDORA</h6>
+                                        <p>00:19:02</p>
+                                    </div>
+                                </div>
+                                <div class="cancion">
+                                    <figure> <img src="img/mayorQueYo.jpg" alt="portada de canción Mayor que yo">
+                                    </figure>
+                                    <div class="info-cancion">
+
+                                        <h6>MAYOR QUE YO</h6>
+                                        <p>00:20:47</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn text-center text-white btn-class"
+                                data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-class text-white"> <a
+                                    class="text-white text-decoration-none"
+                                    href="https://www.youtube.com/watch?v=9LsozO41xho&t" target="_blank">Reproducir
+                                    concierto completo</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="Modal-03" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title fs-5 text-white" id="ModalLabel">Miley Cyrus - Lollapalooza
+                                Brasil 2022</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <video controls width="100%">
+                                <source src="video/miley-video.mp4" type="video/mp4">
+                            </video>
+                            <h4 class="text-white">Lista de canciones</h4>
+                            <section class="d-flex flex-column
+                                ">
+                                <div class="cancion">
+                                    <figure> <img src="img/atention.jpg" alt="portada de la canción atention"></figure>
+                                    <div class="info-cancion">
+                                        <h6>ATTENTION</h6>
+                                        <p>00:0:30</p>
+                                    </div>
+                                </div>
+                                <div class="cancion">
+                                    <figure> <img src="img/wecantstop.jpg" alt="portada canción we cant stop"></figure>
+                                    <div class="info-cancion">
+                                        <h6>WE CANT STOP</h6>
+                                        <p>00:1:38</p>
+                                    </div>
+                                </div>
+                                <div class="cancion">
+                                    <figure> <img src="img/miley-cyrus-mothers-daughter.png"
+                                            alt="portada cancion mothers"></figure>
+                                    <div class="info-cancion">
+                                        <h6>MHOTER'S DAUGTHER</h6>
+                                        <p>00:17:24</p>
+                                    </div>
+                                </div>
+                                <div class="cancion">
+                                    <figure> <img src="img/angels.jpeg" alt="portada de la canción angels"></figure>
+                                    <div class="info-cancion">
+                                        <h6>ANGELS LIKE YOU</h6>
+                                        <p>00:38:52</p>
+                                    </div>
+                                </div>
+                                <div class="cancion">
+                                    <figure> <img src="img/Miley_Cyrus_-_Fly_on_the_Wall.png"
+                                            alt="portada de la canción fly on the walll"></figure>
+                                    <div class="info-cancion">
+                                        <h6>FLY ON THE WALL</h6>
+                                        <p>00:19:02</p>
+                                    </div>
+                                </div>
+                                <div class="cancion">
+                                    <figure> <img src="img/wreckball.jpg" alt="portada de canción wrecking ball">
+                                    </figure>
+                                    <div class="info-cancion">
+                                        <h6>WRECKING BALL</h6>
+                                        <p>1:11:27</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-class text-white"
+                                data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-class text-white"> <a
+                                    class="text-white text-decoration-none"
+                                    href="https://www.youtube.com/watch?v=OyBc8hzlM9w" target="_blank">Reproducir
+                                    concierto
+                                    completo</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="Modal-04" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title fs-5 text-white" id="ModalLabel">TINI Tour 2022 - Santiago,
+                                Chile en Movistar Arena</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <video controls width="100%">
+                                <source src="video/tini-vuelve.mp4" type="video/mp4">
+                            </video>
+                            <h4 class="text-white">Lista de canciones</h4>
+                            <section class="d-flex flex-column">
+                                <div class="cancion">
+                                    <figure> <img src="img/tinitequieromassingle.jpg"
+                                            alt="portada de canción Te quiero más">
+                                    </figure>
+                                    <div class="info-cancion">
+                                        <h6>TE QUIERO MÁS</h6>
+                                        <p>00:01:06</p>
+                                    </div>
+                                </div>
+                                <div class="cancion">
+                                    <figure> <img src="img/martina-stoessel-tini-tini-tini.jpg"
+                                            alt="portada de canción Tini Tini Tini"></figure>
+                                    <div class="info-cancion">
+                                        <h6>QUIERO VOLVER</h6>
+                                        <p>00:14:02</p>
+                                    </div>
+                                </div>
+                                <div class="cancion">
+                                    <figure> <img src="img/sueltate-tini.jpg" alt="portada de canción Sueltate el pelo">
+                                    </figure>
+                                    <div class="info-cancion">
+                                        <h6>SUELTATE EL PELO</h6>
+                                        <p>00:19:27</p>
+                                    </div>
+                                </div>
+                                <div class="cancion">
+                                    <figure> <img src="img/duele-tini.jpg" alt="portada de canción Duele"></figure>
+                                    <div class="info-cancion">
+                                        <h6>DUELE</h6>
+                                        <p>00:48:44</p>
+                                    </div>
+                                </div>
+                                <div class="cancion">
+                                    <figure> <img src="img/martina-stoessel-tini-tini-tini.jpg"
+                                            alt="portada de canción Tini Tini Tini"></figure>
+                                    <div class="info-cancion">
+                                        <h6>MALDITO FOTO</h6>
+                                        <p>01:17:12</p>
+                                    </div>
+                                </div>
+                                <div class="cancion">
+                                    <figure> <img src="img/elladicejpeg.jpeg" alt="portada de canción Ella dice">
+                                    </figure>
+                                    <div class="info-cancion">
+
+                                        <h6>ELLA DICE</h6>
+                                        <p>01:49:45</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-class text-white"
+                                data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-class text-white"> <a
+                                    class="text-white text-decoration-none"
+                                    href="https://www.youtube.com/watch?v=EzyB3HtFZ6s&t" target="_blank">Reproducir
+                                    concierto
+                                    completo</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="border-top-footer"></div>
+    <footer class="container-fluid">
+        <div class="row p-5 justify-content-md-center">
+            <section class=" mt-4 redes col-sm-12 col-md-3 col-lg-2 col-xl-2">
+                <div class="p-1  container_enlaces_rrss">
+                    <a href="https://www.facebook.com/" target="_blank" class="enlaces_footer"><img
+                            class="iconos_footer p-1" src="./img/fb_icon.svg" alt="icono de Facebook" />
+                        <p class="d-inline p-1">/LiveFest</p>
+                    </a>
+                </div>
+                <div class="p-1  container_enlaces_rrss">
+                    <a href="https://www.instagram.com/" target="_blank" class="enlaces_footer"><img
+                            class="iconos_footer p-1" src="./img/ig_icon.svg" alt="icono de Instagram" />
+                        <p class="d-inline p-1">@LiveFest</p>
+                    </a>
+                </div>
+                <div class="p-1 container_enlaces_rrss">
+                    <a href="https://www.Twitter.com/" target="_blank" class="enlaces_footer"><img
+                            class="iconos_footer p-1" src="./img/tw_icon.svg" alt="icono de Twitter" />
+                        <p class="d-inline p-1">@LiveFest</p>
+                    </a>
+                </div>
+            </section>
+
+            <section class=" mt-5 col-sm-12 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-start  align-items-start">
+                <div>
+                    <a href="index.html" class="enlaces_footer"><img class="logo_footer p-3" width="70%"
+                            src="./img/logo.png " alt="Logo de LiveFest" /></a>
+                </div>
+
+            </section>
+            <section class="mt-4 col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                <div class="p-1"><a href="./html/suscripcion.html" class="enlaces_footer">Planes</div>
+                <div class="p-1"><a href="./html/error404.html" class="enlaces_footer">Conciertos</a></div>
+                <div class="p-1"><a href="./html/error404.html" class="enlaces_footer"> Géneros</a></div>
+                <div class="p-1"><a href="./html/nosotros.html" class="enlaces_footer">Acerca de nosotros</a></div>
+            </section>
+            <section class="mt-4  col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                <div class="p-1"> <a href="./html/error404.html" class="enlaces_footer">Términos y Políticas</a></div>
+                <div class="p-1"><a href="./html/contacto.html" class="enlaces_footer">Contacto</a></div>
+                <div class="p-1"><a href="./html/error404.html" class="enlaces_footer">FAQ</a></div>
+            </section>
+        </div>
+    </footer>
+
+    <div class="modal fade my-5" id="logInModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-black">
+                <div class="modal-header">
+                    <div class="ms-auto">
+                        <img style="filter: invert(100%)" width="200px" src="./img/LogoLiveFest.png"
+                            alt="Logo Live Fest">
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="./html/error404.html">
+                    <div class="modal-body">
+                        <div class="form-floating mb-3 form-input">
+                            <label for="floatingInput validationDefaultUsername" class="form-label">Usuario</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="inputGroupPrepend2">Usuario</span>
+                                <input type="text" class="form-control form-control-login text-white"
+                                    id="validationDefaultUsername" minlength="5" maxlength="15"
+                                    aria-describedby="inputGroupPrepend2" title="Formato de usuario invalido"
+                                    pattern="^(?=[a-zA-Z0-9._]{8,20}$)(?!.*[_.]{2})[^_.].*[^_.]$" required>
+                            </div>
+                        </div>
+                        <div class="form-floating form-input my-3">
+                            <label for="floatingPassword"></label>
+                            <div class="input-group ">
+                                <span class="input-group-text" id="inputGroupPrepend2">Contraseña</span>
+                                <input type="password" class="form-control form-control-login text-white "
+                                    id="floatingPassword" minlength="8" maxlength="20" required>
+                            </div>
+                        </div>
+                        <a href="./html/error404.html" class="text-white mb-5">¿Olvidaste tu contraseña?</a>
+                        <div class="modal-footer styleButton mt-2">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <a href="./html/error404.html"><button type="submit"
+                                    class="btn btn-primary">Ingresar</button></a>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>

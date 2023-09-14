@@ -1,0 +1,74 @@
+:root{
+    --color-Navbar: linear-gradient(to right, #112025, #1b0f19 75%);
+    --color-Border-Gradient:  linear-gradient(to right, #06A4CA, #700052); 
+    --color-morado: #2d0527;
+    --color-white: #ffe3fc;
+    --color-footer: #0f0f0f;  
+    --color-gris: #2d2d2d;  
+}
+
+.fondo-navbar {
+    background: var(--color-Navbar);
+}
+
+.logo-navbar{
+    width: 150px;
+}
+
+.colorInvertido {
+    filter: invert(100%);
+}
+
+.borde {
+    background: linear-gradient(to right, #06A4CA, #700052);
+    padding: 0.2rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.btn-inicio {
+    background: var(--color-morado);
+    border-radius: 2rem;
+}
+
+.btn-inicio-degradado{
+    background: linear-gradient(to right, #06A4CA, #700052);
+}
+
+.Cate:hover {
+    background: var(--color-morado);
+    color: var(--color-footer);
+}
+
+.buscador {
+    border-left: none;
+    border-radius: 0 1.5rem 1.5rem 0;
+    background: var(--color-gris);
+    margin: 0;
+}
+
+.buscador:focus {
+    background: var(--color-gris);
+}
+
+.buscador::placeholder {
+    color: white;
+}
+
+.btn-lupa {
+    border-right: none;
+    border-radius: 1.5rem 0 0  1.5rem;    
+    background: var(--color-gris);  
+}
+
+.img-lupa{
+    width: 19px;
+}
+
+@media all and (min-width: 1440px){
+
+    .form-buscar{
+        width: 50%;
+    }
+
+}

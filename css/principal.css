@@ -1,0 +1,221 @@
+body {
+    background-color: #151515 !important;
+}
+
+::selection {
+    background: #c32865;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.poppinsRegular {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.poppinsBoldItalic {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppinsRegularItalic {
+    color: #FFE3FC;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.fontCarousel {
+    color: white;
+    font-size: 58px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.margenContainer {
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+.marginAll {
+    margin: 3rem 3rem;
+}
+
+.carouselMarginTop {
+    margin-top: 7rem;
+}
+
+.c-item {
+    height: 480px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.bordeCelMor { 
+    background: linear-gradient(rgb(25, 25, 25), rgb(25, 25, 25)) padding-box, linear-gradient(to right, #06A4ca, #700052) border-box;
+    border-radius: 1rem;
+    border: 2px solid transparent;
+}
+
+.recordatorio {
+    font-size: 16px;
+    width: 240px;
+}
+
+.cardsDim {
+    background-color: #191919;
+    border-radius: 1rem;
+    width: 15.3rem;
+}
+
+.zoomC2 {
+    transform: scale(1);
+    transition: 1s;
+}
+
+.zoomC2:hover {
+    transform: scale(1.06);
+}
+
+.zoomC {
+    transform: scale(1);
+    transition: 1s;
+}
+
+.zoomC:hover {
+    transform: scale(1.02);
+}
+
+.banners {
+    width: 23rem;
+}
+
+.banners img {
+    width: 100%;
+    transition: 900ms;
+    transform: scale(1);
+}
+
+.banners img:hover {
+    transform: scale(1.02);
+}
+
+.banners button {
+    height: 2rem;
+    color: white;
+    width: 100%;
+    border: none;
+    margin: 0;
+    background-color: #191919;
+    font-size: 0.9rem;
+    transition: 1s;
+}
+
+.hiddenHover {
+    overflow: hidden;
+}
+
+.textoCentrado {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+
+.imagen{
+    height: 120px;
+    padding: 1rem;
+}
+
+.banner-promocion{
+    height: 30vh;
+    width: 100%;
+    position:relative;
+    background-image: url("../img/BannerGuitarra.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+        
+.info-promocion{
+    color: #fff;
+    position: absolute;        
+}
+
+.info-promocion p{
+    font-size: 1.1rem;
+    max-width: 30rem;
+}
+    
+.btn-class{
+    color: white;
+    font-size: .9rem;
+    padding: .4rem .8rem ;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
+    linear-gradient(to right, #06A4ca, #700052) border-box;
+    border-radius: 30rem !important;
+    border: 2px solid transparent;
+    transition: all .5s ease;
+}
+    
+.btn-class:hover{
+    border-color:#06A4ca ;   
+}
+    
+.recomendado .card{
+    color: rgb(255, 255, 255);
+    background-color: #191919 ;
+    margin:  1rem;
+}
+    
+.recomendado .card img:hover{
+    cursor: pointer;
+}
+    
+.modal-recomendado .modal-content{
+    background-color: #191919 !important;
+}
+    
+    
+.cancion{
+    display: flex;
+    color: white;
+        
+}
+
+.cancion img{
+    width: 70px;
+}
+
+.cancion h6:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
+
+p:hover{
+    cursor: default;
+}
+
+.info-cancion{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+    
+.modal-footer .btn-class:hover{
+    border-color:#700052 ;       
+}

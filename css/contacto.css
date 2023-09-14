@@ -1,0 +1,54 @@
+body {
+    background-color: #191919;
+}
+
+::selection {
+    background: #c32865;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.poppinsRegular {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.poppinsBoldItalic {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppinsRegularItalic {
+    color: #FFE3FC;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.contacto  .input-contacto {
+    background-color: #6d6d6d;
+    border: none;
+    color: white;
+}
+
+.contacto input:focus,.contacto textarea:focus {
+    background-color: white;
+}
+
+.contacto span {
+    width: 83px;
+    text-align: center;
+}
+
+.contacto button {
+    background-color: rgb(99, 99, 99);
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    border-radius: 8px;
+    margin-left: 8px;
+}
+
+.boxBoton {
+    width: 100%;
+}
